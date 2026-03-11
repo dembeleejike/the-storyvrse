@@ -1,0 +1,59 @@
+/* Story Page Hero */
+.hero-story {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+}
+
+/* Story Content */
+.story-content {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.story-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ff6f61;
+    font-size: 1.8rem;
+}
+
+.story-content p {
+    margin-bottom: 1.5rem;
+}
+
+.story-content a {
+    color: #ff6f61;
+    text-decoration: underline;
+}
+
+.story-image {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 12px;
+}

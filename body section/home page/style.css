@@ -1,0 +1,281 @@
+/* ================= GLOBAL ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #050505;
+  color: #eaeaea;
+  overflow-x: hidden;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar{
+        margin-right: 30px;
+    }
+    .content{
+        margin: 0 30px;
+    }
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: black;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        border-right: 20px;
+        padding: 20px;
+        display: none;
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* ================= BACKGROUND GRID ================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(0,255,140,0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(40px); }
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(5,5,5,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav h1 {
+  color: #ff6f61;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6f61;
+}
+
+.create-btn {
+  padding: 8px 18px;
+  border: 1px solid #ff6f61;
+  border-radius: 20px;
+  color: #ff6f61;
+  transition: 0.3s;
+}
+
+.create-btn:hover {
+  background: #ff6f61;
+  color: #000;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  color: #ff6f61;
+  text-shadow: 0 0 20px rgba(255, 4, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  padding: 14px 30px;
+  background: #ff6f61;
+  border-radius: 30px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 25px #ff6f61;
+}
+
+.secondary-btn {
+  padding: 14px 30px;
+  border: 1px solid #ff6f61;
+  border-radius: 30px;
+  color: #ff6f61;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: #ff6f61;
+  color: #000;
+}
+
+/* ================= SECTION BASE ================= */
+
+section {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+section p.section-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #aaa;
+}
+
+/* ================= PILLARS ================= */
+
+.pillars {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  padding: 40px;
+  width: 280px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,255,140,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0,255,140,0.3);
+}
+
+.card h4 {
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+/* ================= FEATURE ================= */
+
+.feature-box {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid rgba(0,255,140,0.2);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.02);
+}
+
+/* ================= CTA ================= */
+
+.cta {
+  background: rgba(0,255,140,0.05);
+  border-top: 1px solid rgba(0,255,140,0.2);
+}
+
+.cta h3 {
+  font-size: 2.2rem;
+}
+
+.cta a {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 40px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}

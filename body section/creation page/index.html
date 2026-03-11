@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your First Entry | Storyverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="logo">Storyverse 🌌</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../enter-storyverse.html">Enter Storyverse</a></li>
+                <li><a href="index.html">All Chronicles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-story" style="background-image: url('../images/hero-bg.jpg');">
+        <div class="hero-overlay">
+            <h1>Create Your First Entry</h1>
+            <p>Bring a new story, world, or character to life in the Storyverse.</p>
+        </div>
+    </section>
+
+    <!-- Create Entry Form -->
+    <section class="story-content">
+        <form action="#" method="post" class="create-entry-form">
+            <h2>Entry Type</h2>
+            <select name="entry-type" required>
+                <option value="">Select type...</option>
+                <option value="story">Story / Chronicle</option>
+                <option value="character">Character</option>
+                <option value="world">World / Region</option>
+            </select>
+
+            <h2>Title</h2>
+            <input type="text" name="title" placeholder="Enter title" required>
+
+            <h2>Description / Synopsis</h2>
+            <textarea name="description" rows="5" placeholder="Write a short description..." required></textarea>
+
+            <h2>Hero Image URL</h2>
+            <input type="text" name="image" placeholder="Enter image URL (optional)">
+
+            <h2>Content / Chapters</h2>
+            <textarea name="content" rows="10" placeholder="Write your story or details here..." required></textarea>
+
+            <button type="submit" class="btn">Submit Entry</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Storyverse | All rights reserved</p>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>

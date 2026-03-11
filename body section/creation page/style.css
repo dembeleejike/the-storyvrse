@@ -1,0 +1,50 @@
+/* Create Entry Form */
+.create-entry-form {
+    max-width: 800px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #ddd;
+}
+
+.create-entry-form h2 {
+    color: #ff6f61;
+    margin-bottom: 0.5rem;
+}
+
+.create-entry-form input,
+.create-entry-form select,
+.create-entry-form textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.create-entry-form input,
+.create-entry-form select {
+    width: 100%;
+}
+
+.create-entry-form textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.create-entry-form .btn {
+    width: fit-content;
+    align-self: flex-start;
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.create-entry-form .btn:hover {
+    background: #ff4b3b;
+}
